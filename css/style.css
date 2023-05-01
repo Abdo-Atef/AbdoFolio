@@ -1365,6 +1365,97 @@ span{
   }
 }
 /*------------------ End discount -------------------*/
+/*------------------ Start Footer -------------------*/
+.footer{
+  background-color: #191919;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.footer .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 40px;
+  color: white;
+}
+.footer .container .about h2{
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+.footer .container .about .social{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.footer .container .about i{
+  color: #b9b9b9;
+  padding: 15px 16px;
+  background-color: #313131;
+  font-size: 20px;
+  transition: var(--main-transition);
+}
+.footer .container .about a:hover .face{
+  background-color: #1877f2;
+}
+.footer .container .about a:hover .twit{
+  background-color: #1da1f2;
+}
+.footer .container .about a:hover .youtube{
+  background-color:#ff0000 ;
+}
+.footer .container .about > p{
+  color: #b9b9b9;
+  line-height: 1.9;
+}
+.footer .container img{
+  width: 78px;
+  border: 3px solid white;
+  margin: 2px;
+}
+.footer .container .important .links a{
+  color: #b9b9b9;
+  border-bottom: 1px solid #444;
+  padding: 15px 0;
+  transition: var(--main-transition);
+}
+.footer .container .important .links li:hover a{
+  transform: translateX(10px);
+  color: white;
+}
+.footer .container .important .links a::before{
+  content: "\F101";
+  font-family: "Font Awesome 6 Free";
+  color: var(--main-color);
+  font-size: 13px;
+  font-weight: 900;
+  margin-right: 10px;
+}
+.footer .container .info .line{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+.footer .container .info .line i{
+  flex-basis: 25px;
+  font-size: 25px;
+}
+.footer .container .info .line p{
+  flex: 1;
+  color: #b9b9b9;
+  line-height: 1.7;
+}
+@media (max-width:767px) {
+  .footer .container > div{
+    text-align: center;
+  }
+  .footer .container .about .social{
+    justify-content: center;
+  }
+  .footer .container .info .line{
+    flex-direction: column;
+  }
+}
+/*------------------ End Footer -------------------*/
 /*------------------ Start Scroll Up bottom -------------------*/
 .scroll-up{
   position: fixed;
@@ -1375,4 +1466,5 @@ span{
   border-radius: 2px;
   z-index: 50;
 }
+
 /*------------------ End Scroll Up bottom -------------------*/
