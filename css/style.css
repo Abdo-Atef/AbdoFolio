@@ -1365,6 +1365,7 @@ span{
   }
 }
 /*------------------ End discount -------------------*/
+/*------------------ Start Scroll Up bottom -------------------*/
 .scroll-up{
   position: fixed;
   bottom: 40px;
@@ -1374,3 +1375,4 @@ span{
   border-radius: 2px;
   z-index: 50;
 }
+/*------------------ End Scroll Up bottom -------------------*/
